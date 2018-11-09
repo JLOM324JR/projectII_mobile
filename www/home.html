@@ -51,7 +51,7 @@
     <ons-page>
       <ons-toolbar style="background-color: #660000;color:wheat;">
         <div class="left">
-          <ons-icon class="toolbaricon" size="30px" icon="fa-shopping-bag">
+          <ons-icon class="toolbaricon" size="30px" icon="barcode" onclick="scanQR()">
           </ons-icon>
         </div>
         <div class="center" id="appname" style="color:wheat;">#</div>
@@ -84,7 +84,6 @@
   <template id="tab1.html">
     <ons-page id="Tab1">
       <p style="text-align: center; margin-top: 10px;">
-        <ion-icon name="barcode" onclick="window.location.href='scan.html'" onchange="scan()"></ion-icon>
         <ons-search-input placeholder="Search" onchange="search(this.value)" onchange="scanQR()"></ons-search-input>
       </p>
       <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height: 300px;">
