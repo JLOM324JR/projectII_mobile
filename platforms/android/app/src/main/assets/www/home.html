@@ -203,7 +203,7 @@
         console.log(detail_pro)
       </script>
       <ons-toolbar>
-        <div class="left">
+        <div class="left" onclick="getHomeData()">
           <ons-back-button>Back</ons-back-button>
         </div>
         <div class="center">DETAIL</div>
@@ -351,7 +351,7 @@
   function showPro_detail() {
     var qr = localStorage.getItem("qr");
     if(qr==null){
-      
+      var dataproduct = localStorage.getItem('getdata');
     }else{
     var dataproduct = localStorage.getItem('qr');
     }
@@ -369,6 +369,7 @@
 
 
   function getDetail(getdata) {
+    alert(getdata);
     localStorage.setItem("getdata", getdata)
     showPro_detail();
     myNavigator.pushPage('productInfo.html');
