@@ -23,9 +23,9 @@
                     // an error occurred, or the scan was canceled (error code `6`)
                 } else {
                     // The scan completed, display the contents of the QR code:
-                    localStorage.setItem("code", text);
+                    localStorage.setItem("qr", text);
                     QRScanner.hide();
-                    window.location.href = 'index.html';
+                    window.location.href = 'home.html';
                 }
             }
 

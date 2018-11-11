@@ -51,7 +51,7 @@
     <ons-page>
       <ons-toolbar style="background-color: #660000;color:wheat;">
         <div class="left">
-          <ons-icon class="toolbaricon" size="30px" icon="fa-shopping-bag">
+          <ons-icon class="toolbaricon" size="30px" icon="md-camera" onclick="scanQR()">
           </ons-icon>
         </div>
         <div class="center" id="appname" style="color:wheat;">#</div>
@@ -283,7 +283,10 @@
 
 
   function getHomeData() {
-
+    var qr = localStorage.getItem('qr');
+    console.log("QR CODE" + qr)
+    
+    if(qr==null){
     var docRef = db.collection("UI").doc("home");
     docRef.get().then(function (doc) {
       if (doc.exists) {
@@ -309,6 +312,10 @@
     });
 
 
+  }else if(qr!=null){
+    getDetail(qr);
+  }
+  
   }
 
   function category(name) {
@@ -342,14 +349,21 @@
   }
 
   function showPro_detail() {
-    var dataproduct = localStorage.getItem('getdata');
+    var qr = localStorage.getItem("qr");
+    if(qr==null){
+      
+    }else{
+    var dataproduct = localStorage.getItem('qr');
+    }
+    
     var apr = db.collection("PRODUCTS").where("title", "==", dataproduct);
     apr.get().then(function (querySnapshot) {
       var Detailproduct_template = $('#Detailproduct_template').html();
       var html = ejs.render(Detailproduct_template, { detail_pro: querySnapshot.docs });
       $('#display_infoPro').html(html);
-    })
-
+    });
+    localStorage.clear();
+    
   }
 
 
