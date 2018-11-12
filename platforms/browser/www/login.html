@@ -31,6 +31,11 @@
             background-color: #FFCC66;
             position: absolute;
         }
+        .head_content{
+            padding-top: 5px;
+            margin-top: 10px;
+        }
+
         .fa {
             padding: 20px;
             font-size: 30px;
@@ -40,23 +45,28 @@
             margin: 5px 2px;
             border-radius: 50%;
         }
+
         .fa:hover {
             opacity: 1.0;
         }
+
         .fa-google {
             background: #dd4b39;
             color: white;
         }
-
     </style>
 
 </head>
 
 <body>
     <ons-page>
-            <div class="page__background"></div>
+        <div class="page__background"></div>
         <div style="text-align: center; margin-top: 30px;">
-            
+            <div class="head_content">
+                <p>
+                    <h1>JM SHOPPING</h1>
+                </p>
+            </div>
             <p>
                 <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
             </p>
@@ -66,14 +76,20 @@
             <p style="margin-top: 30px;">
                 <ons-button onclick="login()">Sign in</ons-button>
             </p>
+            <div class="head_content">
+                <p>
+                    <h1>SIGN UP NEW USER</h1>
+                </p>
+            
             <p style="margin-top: 30px;">
                 <ons-button onclick="google()" class="fa fa-google"></ons-button>
-            
+
                 <ons-button onclick="facebook()" class="fa fa-facebook"></ons-button>
             </p>
             <p style="margin-top: 50px;">
                 <a href="register.html">Sign up for a new user</a>
             </p>
+        </div>
         </div>
         </div>
     </ons-page>

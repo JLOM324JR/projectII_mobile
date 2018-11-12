@@ -12,6 +12,25 @@
     },
     "cordova-plugin-qrscanner": {
       "PACKAGE_NAME": "com.lom.hello"
+    },
+    "cordova-plugin-buildinfo": {
+      "PACKAGE_NAME": "com.lom.hello"
+    },
+    "cordova-universal-links-plugin": {
+      "PACKAGE_NAME": "com.lom.hello"
+    },
+    "cordova-plugin-browsertab": {
+      "PACKAGE_NAME": "com.lom.hello"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.lom.hello"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "com.firebase.cordova",
+      "ANDROID_SCHEME": " ",
+      "ANDROID_HOST": " ",
+      "ANDROID_PATHPREFIX": "/",
+      "PACKAGE_NAME": "com.lom.hello"
     }
   },
   "dependent_plugins": {}

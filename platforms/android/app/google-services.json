@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "709806928945",
+    "firebase_url": "https://shopee-se024.firebaseio.com",
+    "project_id": "shopee-se024",
+    "storage_bucket": "shopee-se024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709806928945:android:a3768923e12e40a0",
+        "android_client_info": {
+          "package_name": "com.lom.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709806928945-03binp98emqbbl6b1bcc1mmmro24k9ll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOPjbdG4sbxXwhBEvXTYynqMnW5nV7uKw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
